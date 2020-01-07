@@ -1,0 +1,30 @@
+<h1>Enjoy Your Burger!</h1>
+
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      <li>{{burger_name}} <button class="eatButton" type="button" data-id="{{id}}">Eat it!</button></li>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<script>
+  $(".eatButton").on("click", function(event){
+    event.preventDefault();
+    
+    console.log($(this).data("id"))
+    console.log($(this).attr("data-id"))
+    var id = $(this).attr("data-id")
+
+   $.ajax({
+      url: "/api/burgers/" + id, 
+      type: "PUT"
+    }).then(
+      function() {
+        console.log("burger has been eaten")
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  })
+</script>
