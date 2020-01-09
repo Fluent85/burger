@@ -19,15 +19,9 @@ var orm = {
             cb(result);
         });
     },
-    create: function(table, cols, vals, cb) {
-        var queryString = "INSERT INTO " + table;
-    
-        queryString += " (";
-        queryString += cols.toString();
-        queryString += ") ";
-        queryString += "VALUES (";
-        queryString += printQuestionMarks(vals.length);
-        queryString += ") ";
+    create: function(table, vals, cb) {
+      //"INSERT INTO" + table + " (" + cols + ") VALUES (" + vals + ");"
+      var queryString = "INSERT INTO " + table +  " SET ?"
     
         console.log(queryString);
     

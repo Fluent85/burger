@@ -8,7 +8,18 @@
   {{/each}}
 </ul>
 
-{{!-- <h2>Add a Burger</h2>
+
+<h2>Burgers Eaten and/or Devoured:</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      <li>{{burger_name}} <button class="digestButton" type="button" data-id="{{id}}">Digest it!</button></li> </li> 
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Burger</h2>
 <form class="create-form">
 
   <div class="form-group">
@@ -16,14 +27,8 @@
     <input type="text" id="ca" name="name">
   </div>
 
-  <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div>
-
   <button type="submit">Add Burger</button>
-</form> --}}
+</form>
 
 <script>
   $(".eatButton").on("click", function(event){
@@ -43,5 +48,24 @@
         location.reload();
       }
     );
+  })
+
+  $(".create-form").on("submit", function(event){
+    event.preventDefault();
+
+    console.log($("#ca").val())
+    var burger_name = $("#ca").val()
+    var burgerObject = {burger_name}
+    console.log(burgerObject)
+
+    $.ajax({
+      url: "/api/burgers",
+      type: "POST",
+      data: burgerObject
+    }).then(function(){
+      console.log("created new burger");
+      location.reload();
+    })
+
   })
 </script>

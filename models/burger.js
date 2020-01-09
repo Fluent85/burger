@@ -8,6 +8,9 @@ var burger = {
     },
     update: function(condition, cb){
         orm.update("burgers", "devoured = true", condition, cb)
+    },
+    create: function(vals, cb){
+        orm.create("burgers", vals, cb)
     }
 }
 
