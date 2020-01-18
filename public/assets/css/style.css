@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+}
+
+.form-group {
+    margin-bottom: 5px;
+  }
+
+  img {
+    height: 300px;
+    width: 400px;
+  }  
