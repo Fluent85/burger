@@ -15,6 +15,10 @@ The application will prompt the user to add a burger name.  Then from there, the
 
 Currently the application works.  Heroku currenlty works!
 
+## Technologies Implemented
+
+HTML 5, CSS, JavaScript, jQuery, ajax, Node express, Node express handlebars, MySQL  
+
 ## heroku
 
 https://protected-spire-86852.herokuapp.com/
