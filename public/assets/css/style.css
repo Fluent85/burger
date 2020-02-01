@@ -6,9 +6,9 @@ body {
     margin-bottom: 5px;
   }
 
-  img {
-    height: 300px;
-    width: 400px;
+  .responsive {
+    height: auto;
+    width: 100%;
   } 
   
   .container {
