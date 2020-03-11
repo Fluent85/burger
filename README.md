@@ -13,7 +13,7 @@ The application will prompt the user to add a burger name.  Then from there, the
 
 ## Issues and future development
 
-Currently the application works.  Heroku currenlty works!  Currently beta testing this application with PWA features.  The app doesn't work while not connected to the internet.  I also have not pushed the PWA changes to heroku.
+Currently the application works.  Plan on adding more in depth CSS for styling purposes.
 
 ## Technologies Implemented
 
