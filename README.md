@@ -4,10 +4,17 @@ This is my first attempt at building a full app/website, front-end to backend.
  
 ## Motivation
 
-Practice MySQL, Node express handlebars, Node express, CSS, JavaSrcipt, jQuery, and learn more about these backend languages.  Also learn how to build an application from the backend to the front-end to make it a fully functional application.
+Practice MySQL, Node.js Express, Handlebars.js, CSS, JavaSrcipt, jQuery, and learn more about how front-end and backend languages communicate with each other.  Also learn how to build an application from the backend to the front-end to make it a fully functional application.
 
 ## How to use? 
 
+* Eat-The-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
+
+* Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.
+
+* Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
+
+* Your app will store every burger in a database, whether devoured or not.
 The application will prompt the user to add a burger name.  Then from there, the user can eat the burger by pressing the Eat it! button.  Then the user can digest the burger by pressing the Digest it button.
 
 
@@ -17,7 +24,7 @@ Currently the application works.  Plan on adding more in depth CSS for styling p
 
 ## Technologies Implemented
 
-HTML 5, CSS, JavaScript, jQuery, ajax, Node express, Node express handlebars, MySQL,  
+HTML5, CSS, JavaScript, jQuery, Ajax, Node.js Express, Handlebars.js, MySQL,  
 
 ## heroku
 
