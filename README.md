@@ -14,7 +14,7 @@ Practice MySQL, Node.js Express, Handlebars.js, CSS, JavaSrcipt, jQuery, and lea
 
 * Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
 
-* Your app will store every burger in a database, whether devoured or not.
+* The application will store every burger in a database, whether devoured or not.
 The application will prompt the user to add a burger name.  Then from there, the user can eat the burger by pressing the Eat it! button.  Then the user can digest the burger by pressing the Digest it button.
 
 
