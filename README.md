@@ -26,7 +26,8 @@ Currently the application works.  Plan on adding more in depth CSS for styling p
 
 HTML5, CSS, JavaScript, jQuery, Ajax, Node.js Express, Handlebars.js, MySQL,  
 
-## heroku
+## heroku 
+* Simply click on the link below to access the application.
 
 https://protected-spire-86852.herokuapp.com/
 
